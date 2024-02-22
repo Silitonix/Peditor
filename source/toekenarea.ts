@@ -12,9 +12,9 @@ class TokenArea
       this.text.push("");
       return;
     }
-    let line = this.text[this.row];
-    line = `${line?.slice(0,this.col)}${character}${line?.slice(0,this.col)}`;
-    this.text[this.row] = line;
+    let line = this.text[ this.row ];
+    line = `${ line?.slice(0, this.col) }${ character }${ line?.slice(0, this.col) }`;
+    this.text[ this.row ] = line;
   }
 
   constructor (text: string)
